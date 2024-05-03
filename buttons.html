@@ -1,99 +1,107 @@
-<style>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <style>
 
-    /*padding - spacing inside the element/button
-    padding is always the betetr option than height/width as it resizes with the text inside the button when needed */
-
-    /*vertical-align - aligns our button to top (by default browser aligns the buttons/elements based on text alignment)*/
-    .subscribe-button{
-        background-color: rgba(255, 0, 0, 0.886);
-        color: white; /*colour of the text*/
-        border: none; /*border of button*/
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-right: 8px;
-        transition: opacity 0.15s; /*opacity transition to happen smoothly here 1s means 1sec, ideal is 0.15s hence changed*/
-        vertical-align: top;
-
-    }
-
-    /*CSS styles when we hover over the button*/
-    .subscribe-button:hover{
-        opacity: 0.8; /*lesser the opacity, more the fade*/
-    }
-
-    /*CSS styles when we click over the button
-    1 is the normal opacity*/
-    .subscribe-button:active{
-        opacity: 0.4; 
-    }
-
-    .join {
-        background-color: white;
-        border-color: rgb(50, 115, 236);
-        border-style: solid;
-        border-width: 1px;
-        color: rgb(50, 115, 236);
-        border-radius: 4px;
-        padding-top: 9px; /*padding gives space inside the button*/
-        padding-left: 15px;
-        padding-right: 20px;
-        padding-bottom: 9px;
-        cursor: pointer;
-        transition: background-color 1s, color 1s; /*opacity transition to happen smoothly here 1s means 1sec, ideal is 0.15s hence changed*/
-    }
-
-    /*
-    we can write transition style in hover sub class but then it will only apply when we hover over it, as soon as we unhover over it
-    the style will change instantly i.e the usual existing one. hence it is approched to keep the transition style logic in main class
-    */
-
-    .join:hover{
-        background-color: rgb(50, 115, 236); /* on hover change the background colour to as defined here*/
-        color: white; /* on hover change the text colour to white*/
-    }
-
-    /*below style will take action when we click on join button*/
-    .join:active {
-        opacity: 3;
-    }
-
-    .tweet{
-        background-color: rgb(7, 170, 230);
-        color: white;
-        border: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 15px;
-        padding-left: 15px;
-        border-radius: 18px;
-        margin-left: 8px;
-        font-weight: bold;
-        font-size: 15;
-        cursor: pointer;
-        /* box-shadow: 10px 0px 0px red; box shadow takes 4 values, horizontal pos, vertical pos, blurr intensity, colour of shadow*/
-        transition: box-shadow 1s;
-        vertical-align: top;
-    }
-
-    .tweet:hover {
-        box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.20); /*box shadow takes 4 values, horizontal pos, vertical pos, blurr intensity, colour of shadow with opacity*/
-    }
-
-</style>
-
-
-<button class="subscribe-button">
-    SUBSCRIBE
-</button>
-
-<button class="join">
-    JOIN
-</button>
-
-<button class="tweet">
-    Tweet
-</button>
+            /*padding - spacing inside the element/button
+            padding is always the betetr option than height/width as it resizes with the text inside the button when needed */
+        
+            /*vertical-align - aligns our button to top (by default browser aligns the buttons/elements based on text alignment)*/
+            .subscribe-button{
+                background-color: rgba(255, 0, 0, 0.886);
+                color: white; /*colour of the text*/
+                border: none; /*border of button*/
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-right: 8px;
+                transition: opacity 0.15s; /*opacity transition to happen smoothly here 1s means 1sec, ideal is 0.15s hence changed*/
+                vertical-align: top;
+        
+            }
+        
+            /*CSS styles when we hover over the button*/
+            .subscribe-button:hover{
+                opacity: 0.8; /*lesser the opacity, more the fade*/
+            }
+        
+            /*CSS styles when we click over the button
+            1 is the normal opacity*/
+            .subscribe-button:active{
+                opacity: 0.4; 
+            }
+        
+            .join {
+                background-color: white;
+                border-color: rgb(50, 115, 236);
+                border-style: solid;
+                border-width: 1px;
+                color: rgb(50, 115, 236);
+                border-radius: 4px;
+                padding-top: 9px; /*padding gives space inside the button*/
+                padding-left: 15px;
+                padding-right: 20px;
+                padding-bottom: 9px;
+                cursor: pointer;
+                transition: background-color 1s, color 1s; /*opacity transition to happen smoothly here 1s means 1sec, ideal is 0.15s hence changed*/
+            }
+        
+            /*
+            we can write transition style in hover sub class but then it will only apply when we hover over it, as soon as we unhover over it
+            the style will change instantly i.e the usual existing one. hence it is approched to keep the transition style logic in main class
+            */
+        
+            .join:hover{
+                background-color: rgb(50, 115, 236); /* on hover change the background colour to as defined here*/
+                color: white; /* on hover change the text colour to white*/
+            }
+        
+            /*below style will take action when we click on join button*/
+            .join:active {
+                opacity: 3;
+            }
+        
+            .tweet{
+                background-color: rgb(7, 170, 230);
+                color: white;
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 15px;
+                padding-left: 15px;
+                border-radius: 18px;
+                margin-left: 8px;
+                font-weight: bold;
+                font-size: 15;
+                cursor: pointer;
+                /* box-shadow: 10px 0px 0px red; box shadow takes 4 values, horizontal pos, vertical pos, blurr intensity, colour of shadow*/
+                transition: box-shadow 1s;
+                vertical-align: top;
+            }
+        
+            .tweet:hover {
+                box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.20); /*box shadow takes 4 values, horizontal pos, vertical pos, blurr intensity, colour of shadow with opacity*/
+            }
+        
+        </style>
+        
+        
+        <button class="subscribe-button">
+            SUBSCRIBE
+        </button>
+        
+        <button class="join">
+            JOIN
+        </button>
+        
+        <button class="tweet">
+            Tweet
+        </button>
+    </body>
+</html>
